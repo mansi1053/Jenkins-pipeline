@@ -12,7 +12,7 @@ pipeline {
      string(name: 'ImageTag', defaultValue: 'latest')
    }
    environment {
-     DOCKER_REPO_CREDS =  credentials('docker-registy-login')
+     DOCKER_REPO_CREDS =  credentials('docker-hub-login')
    } 
   
    stages {
