@@ -28,8 +28,8 @@ pipeline {
       dir('src/') {
         withSonarQubeEnv('sonar-scanner') {
                         sh ''' $SCANNER_HOME/bin/sonar-scanner \
-                        -Dsonar.projectName=docker-learning-basic \
-                        -Dsonar.projectKey=docker-learning-basic '''
+                        -Dsonar.projectName=docker-project \
+                        -Dsonar.projectKey=docker-proje '''
         }
       }
      }
